@@ -76,6 +76,7 @@ transition: all 0.5s ease;
     background-color: #e9f5f5;
     transform: scale(1.1);
     cursor:pointer;
+    }
 `
 
 const Product = ({item}) => {
