@@ -58,9 +58,25 @@ transition: all 0.5s ease;
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
+    cursor: pointer;
   }
 `
-
+const IconB = styled.button`
+width:40px;
+height:40px;
+border: none;
+border-radius: 50%;
+background-color: white;
+display:flex;
+align-items: center;
+justify-content:center;
+margin:10px;
+transition: all 0.5s ease;
+  &:hover {
+    background-color: #e9f5f5;
+    transform: scale(1.1);
+    cursor:pointer;
+`
 
 const Product = ({item}) => {
   return (
@@ -72,9 +88,9 @@ const Product = ({item}) => {
 <ShoppingCartOutlinedIcon/>
     </Icon>
 <Link to='/product-detail'>
-    <Icon>
+    <IconB>
 <SearchOutlined/>
-    </Icon>
+    </IconB>
 </Link>
 
 
